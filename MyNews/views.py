@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 import json, requests
 from newsapi import NewsApiClient
 # Create your views here.
-newsapi = NewsApiClient(api_key = 'XXXXXXXXX')
+newsapi = NewsApiClient(api_key = '62e6c5b8ff0b4656ad843a42136d529a')
 
 def index(request):
     topheadlines = newsapi.get_top_headlines(country = 'in')
